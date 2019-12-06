@@ -1,1 +1,115 @@
 /* Add styles for truYum application here */
+body{
+	height: 100%;
+	width: 100%;
+}
+header{
+	background-color:#4a5b91;
+	color:white;
+	height:100px;
+}
+div{
+    height:500px;
+	
+	
+}
+
+footer{
+    background-color:#adb3af;
+    height:100px;
+}
+
+img{
+    height:50px;
+    width:50px;
+}
+.menu{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+	color: white;
+}              
+
+.cont4 {
+	margin-left:400px;
+	font-size:15pt;
+	
+}
+.cont5 {
+	margin-left:400px;
+	font-size:15pt;
+	width:800px;
+}
+
+#head, #foot{
+	margin-top:20px;
+}
+#head{
+	margin-left: 10px;
+	font-size: 18pt;
+}
+.name{
+	  text-align:left;
+	
+}
+.freedelivery
+{
+	text-align:left;
+}
+.price
+{
+     text-align:left;
+	 margin-right:50px;
+}
+.category
+{
+	 text-align:left;
+}
+.action
+{
+	text-align:center;
+}
+.dateoflaunch
+{
+	margin-right:50px;
+}
+.cont1
+{
+	margin-left:255px;
+	width:800px;
+	height:500px;
+	color:green;
+	margin-right:100px;
+}
+#preeya
+{
+	color:green;
+	margin-left:600px;
+}
+.link
+{
+	text-align:center;
+	
+}
+.link1{
+	color:black;
+	text-align:right;
+}
+.cont2
+{
+	color:grey;
+	margin-left:380px;
+	font-size:15pt;
+	margin-bottom:300px;
+}
+#sb
+{
+	color:white;
+	background-color:blue;
+}
+a{
+	color:black;
+}
+#blue{
+	color:blue;
+}
