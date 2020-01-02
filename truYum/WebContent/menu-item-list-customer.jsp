@@ -1,4 +1,6 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<title>Menu Item List Admin</title>
@@ -11,10 +13,9 @@
 			<img src="./images/truyum-logo-light.png" />
 			<a class="menu" href="./cart.html">Cart</a>
 			<a class="menu" href="./menu-item-list-customer.html">Menu</a>
-			</header>
+		</header>
 			<div>
-			<h1 class="cont4" >Menu Items</h1>
-			<h3 id="preeya">Menu Item details saved successfully</h3>
+			<h3 class="cont4" >Menu Items</h3>
 			<table class="cont5">
 			<tr>
 			        <th class="name">Name</th>
@@ -28,24 +29,25 @@
 					<td class="freedelivery">Yes</td>
 					<td class="price">Rs.99.00</td>
 					<td class="category">Main Course</td>
-					<td><a href="./edit-menu-item.html">Add to cart<a></td>
+					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
 			</tr>
 			<tr>
 					<td class="name">Burger</td>
 					<td class="freedelivery">No</td>
 					<td class="price">Rs.129.00</td>
 					<td class="category">Main Course</td>
-					<td><a href="./edit-menu-item.html">Add to cart<a></td>
+					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
 				</tr>
 				<tr>
 					<td class="name">Pizza</td>
 					<td class="freedelivery">No</td>
 					<td class="price">Rs.149.00</td>
 					<td class="category">Main Course</td>
-					<td><a href="./edit-menu-item.html">Add to cart<a></td>
+					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
 				</tr>
 			  </table>
 		</div>
+		
 		
 		<footer><span id="foot">Copyright</span></footer>
 	</body>
