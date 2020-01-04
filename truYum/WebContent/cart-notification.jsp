@@ -16,7 +16,7 @@
 		</header>
 			<div>
 			<h4 class="cont4">Cart</h4>
-			<h3 id="preeya" <input type="color" name="favcolor" value="#ff0000">Items removed from th cart successfully</h3>
+			<h3 id="preeya"><input type="color" name="favcolor" value="#ff0000">Items removed from th cart successfully</h3>
 			<table class="cont5">
 			<tr>
 			        <th class="name">Name</th>

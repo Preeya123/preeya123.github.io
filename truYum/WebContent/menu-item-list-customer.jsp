@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -11,11 +14,12 @@
 		<header>
 			<span id="head">truYum</span>
 			<img src="./images/truyum-logo-light.png" />
-			<a class="menu" href="./cart.html">Cart</a>
-			<a class="menu" href="./menu-item-list-customer.html">Menu</a>
+			<a class="menu" href="ShowCart">Cart</a>
+			<a class="menu" href="/ShowMenuListCustomer.jsp">Menu</a>
 		</header>
 			<div>
 			<h3 class="cont4" >Menu Items</h3>
+			${msg}
 			<table class="cont5">
 			<tr>
 			        <th class="name">Name</th>
@@ -24,27 +28,17 @@
 					<th class="category">Category</th>
 					<th class="action">Action</th>
 			</tr>
+			<c:forEach items="${menuItemList}" var="x">
 			<tr>
-					<td class="name">Sandwich</td>
-					<td class="freedelivery">Yes</td>
-					<td class="price">Rs.99.00</td>
-					<td class="category">Main Course</td>
-					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
+					<td class="name">${x.name}</td>
+					<td class="freeDelivery"><c:if test="${x.freeDelivery}">Yes</c:if>
+					<c:if test="${!x.freeDelivery}">No</c:if></td>
+					<td class="price">${x.price}</td>
+					<td class="category">${x.category}</td>
+					<td class="action"><a href="AddToCart?id=${x.id}">Add to Cart</a></td>
 			</tr>
-			<tr>
-					<td class="name">Burger</td>
-					<td class="freedelivery">No</td>
-					<td class="price">Rs.129.00</td>
-					<td class="category">Main Course</td>
-					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
-				</tr>
-				<tr>
-					<td class="name">Pizza</td>
-					<td class="freedelivery">No</td>
-					<td class="price">Rs.149.00</td>
-					<td class="category">Main Course</td>
-					<td class="action"><a href="./edit-menu-item.html">Add to cart<a></td>
-				</tr>
+			</c:forEach>
+			
 			  </table>
 		</div>
 		

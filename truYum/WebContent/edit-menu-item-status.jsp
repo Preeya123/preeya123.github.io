@@ -10,7 +10,7 @@
 		<header>
 			<span id="head">truYum</span>
 			<img src="./images/truyum-logo-light.png" />
-			<a class="menu" href="./menu-item-list-admin.html">Menu</a>
+			<a class="menu" href="ShowMenuItemListAdmin">Menu</a>
 		</header>
 		
 			<h1 class="cont">Edit Menu Item Status</h1>
