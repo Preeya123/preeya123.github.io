@@ -10,11 +10,11 @@
 		<header>
 			<span id="head">truYum</span>
 			<img src="./images/truyum-logo-light.png" />
-			<a class="menu" href="ShowMenuItemListAdmin">Menu</a>
+			<a class="menu" href="./menu-item-list-admin.html">Menu</a>
 		</header>
 		
 			<h1 class="cont">Edit Menu Item Status</h1>
-			<h3 class="cont1">${msg}</h3>
-		<footer><span id="foot">Copyright @ 2019</span></footer>
+			<h3 class="cont1">Menu Item details saved successfully</h3>
+		<footer><span id="foot">Copyright</span></footer>
 	</body>
 </html>

@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 <a href="ShowMenuItemListAdmin">Admin Menu Item List</a><br/>
 <a href="ShowMenuItemListCustomer">Customer Menu Item List</a><br/>
+=======
+
+>>>>>>> 15bc468c9c898afe453eb0ba6c2be437f31b1d31
 </body>
 </html>
