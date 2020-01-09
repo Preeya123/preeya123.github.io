@@ -14,7 +14,7 @@
 		<header>
 			<span id="head">truYum</span>
 			<img src="./images/truyum-logo-light.png"/>
-<a class="menu" href="./menu-item-list-admin.jsp">Menu</a>		</header>
+<a class="menu" href="./menu-item-list-admin.jsp">Menu</a></header>
 		
 		<div>
 			<h1 class="cont4" >Menu Items</h1>

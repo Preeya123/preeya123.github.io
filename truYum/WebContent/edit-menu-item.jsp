@@ -41,8 +41,7 @@
 					<td class="date"><fmt:formatDate var="dol"
 							pattern="dd/MM/yyyy" value="${menuItem.dateOfLaunch}"></fmt:formatDate>
 						<input type="text" name="dol" value="${dol}" /></td>
-					<td><select value="Main Course" name="category"
-						id="Main Course">
+					<td><select value="Main Course" name="category" id="Main Course">
 							<option>Starters</option>
 							<option selected>Main Course</option>
 							<option>Desserts</option>
@@ -50,11 +49,11 @@
 					</select></td>
 				</tr>
 				<tr rowspan="4">
-					<td><input type="checkbox" name="ch" checked />Free Delivery
+					<td><input type="checkbox" name="ch" checked/>Free Delivery
 					</td>
 				</tr>
 				<tr rowspan="4">
-					<td><input type="submit" value="Save" id="sb" /></td>
+					<td><input type="submit" value="Save" id="sb"/></td>
 				</tr>
 
 			</table>

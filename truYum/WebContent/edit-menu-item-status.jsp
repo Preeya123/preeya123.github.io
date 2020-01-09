@@ -15,6 +15,6 @@
 		
 			<h1 class="cont">Edit Menu Item Status</h1>
 			<h3 class="cont1">Menu Item details saved successfully</h3>
-		<footer><span id="foot">Copyright</span></footer>
+		<footer><span id="foot">Copyright @ 2019</span></footer>
 	</body>
 </html>

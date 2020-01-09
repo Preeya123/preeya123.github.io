@@ -40,9 +40,7 @@
 			</c:forEach>
 			
 			  </table>
-		</div>
-		
-		
+		</div>	
 		<footer><span id="foot">Copyright</span></footer>
 	</body>
 </html>
