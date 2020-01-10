@@ -51,8 +51,9 @@ where me_active='Yes'and me_date_of_launch<(select(current_date()));
 insert into cart(ct_us_id,ct_pr_id)
 values
 (1,3),(1,4);
+
 delete from cart
-where ct_id='3'and ct_us_id='1';
+where ct_id=3 and ct_us_id=1;
 
 select * from cart;
 -- -------------------------------------------------------------------
