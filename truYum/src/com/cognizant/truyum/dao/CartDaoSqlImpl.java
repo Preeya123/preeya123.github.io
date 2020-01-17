@@ -53,7 +53,7 @@ public class CartDaoSqlImpl implements CartDao{
         			m.setDateOfLaunch(rs.getDate(5));
         			m.setCategory(rs.getString(6));
         			m.setFreeDelivery(rs.getString(7).equalsIgnoreCase("Yes"));
-        			cart.getMenuItemList();
+        			cart.getMenuItemList().add(m);
         		}
      			
             	}catch(Exception ex) {
