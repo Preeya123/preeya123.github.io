@@ -1,5 +1,6 @@
 package com.cognizant.truyum.dao;
 
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.List;
@@ -30,7 +31,7 @@ public class CartDaoCollectionImpl implements CartDao {
 				cart.getMenuItemList().add(menuItem);
 				userCarts.put(userId, cart);
 			}
-		} catch (ParseException e) {
+		} catch (ParseException | SQLException e) {
 
 			e.printStackTrace();
 		}

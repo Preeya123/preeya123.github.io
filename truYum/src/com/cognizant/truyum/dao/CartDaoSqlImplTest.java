@@ -6,31 +6,32 @@ import java.util.List;
 
 import com.cognizant.truyum.model.MenuItem;
 
-public class CartDaoCollectionImplTest {
-
+public class CartDaoSqlImplTest {
 	public static void main(String[] args) throws CartEmptyException, SQLException, ParseException {
+
 		testAddCartItem();
 		testAllCartItem();
 		testRemoveCartItem();
+	
 
 	}
 
 	public static void testAddCartItem() throws CartEmptyException, SQLException, ParseException {
-		CartDao cartDao = new CartDaoCollectionImpl();
-		cartDao.addCartItem(1, 2l);
-		cartDao.addCartItem(1, 4l);
+		CartDao cartDao = new CartDaoSqlImpl();
+		cartDao.addCartItem(1, 2);
+		cartDao.addCartItem(1, 4);
 
 		List<MenuItem> menuItemListCustomer = cartDao.getAllCartItems(1);
-		for (MenuItem menuItem : menuItemListCustomer) {
-			System.out.println(menuItem);
+		for (MenuItem menu_Item : menuItemListCustomer) {
+			System.out.println(menu_Item);
 		}
 	}
 
 	public static void testRemoveCartItem() throws CartEmptyException {
-		CartDao cartDao = new CartDaoCollectionImpl();
+		CartDao cartDao = new CartDaoSqlImpl();
 		try {
-			cartDao.removeCartItem(1, 2L);
-			cartDao.removeCartItem(1, 4L);
+			cartDao.removeCartItem(1, 2);
+			cartDao.removeCartItem(1, 4);
 			List<MenuItem> menuItemListCustomer = cartDao.getAllCartItems(1);
 			for (MenuItem menuItem : menuItemListCustomer) {
 				System.out.println(menuItem);

@@ -1,6 +1,8 @@
 package com.cognizant.truyum.servlet;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.text.ParseException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,7 +35,12 @@ public class AddToCartServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CartDao cartDao = new CartDaoCollectionImpl();
 		long id=Long.parseLong(request.getParameter("id"));
-		cartDao.addCartItem(1,id);
+		try {
+			cartDao.addCartItem(1,id);
+		} catch (SQLException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		request.setAttribute("msg","Item added successfully");
 		RequestDispatcher rd=request.getRequestDispatcher("ShowMenuItemListCustomer");
 		rd.forward(request,response);

@@ -19,7 +19,7 @@ values
 
 select * from menu_item;
 update menu_item 
-set me_name='Samosa',me_price='55.0',me_active='Yes',me_date_of_launch='2017-07-07',me_category='Main Course',me_free_delivery='Yes'
+set me_name='Vada Pav',me_price='60.0',me_active='Yes',me_date_of_launch='2017-07-14',me_category='Main Course',me_free_delivery='Yes'
 where me_id='1';
 -- -------------------------------------------------------------------
 -- Adding into Menu Items is MenuItem Table

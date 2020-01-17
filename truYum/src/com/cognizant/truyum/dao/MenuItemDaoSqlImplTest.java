@@ -7,19 +7,19 @@ import java.util.List;
 import com.cognizant.truyum.model.MenuItem;
 import com.cognizant.truyum.util.DateUtil;
 
-public class MenuItemDaoCollectionImplTest {
-	public static void main(String[] args) {
+public class MenuItemDaoSqlImplTest {
+	public static void main(String[] args) throws SQLException {
 
 		try {
 			System.out.println("Admin menu item list");
 			testGetMenuItemListAdmin();
 			System.out.println("Customer menu item list");
 			testGetMenuItemListCustomer();
-			testModifyMenuItem();
+		
 			System.out.println("Modify menu item list");
 			testGetMenuItemListAdmin();
 
-		} catch (ParseException | SQLException e) {
+		} catch (ParseException e) {
 
 			e.printStackTrace();
 		}
@@ -42,8 +42,7 @@ public class MenuItemDaoCollectionImplTest {
 	}
 
 	public static void testModifyMenuItem() throws ParseException, SQLException {
-		MenuItem m = new MenuItem(3, "Samosa", 60.00f, false, DateUtil.convertToDate("14/03/2022"), "Main Course",
-				false);
+		MenuItem m = new MenuItem(1, "Samosa", 60.00f, false, DateUtil.convertToDate("14/03/2022"), "Main Course",false);
 		MenuItemDao menuItemDao = new MenuItemDaoSqlImpl();
 		menuItemDao.modifyMenuItem(m);
 
